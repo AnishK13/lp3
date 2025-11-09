@@ -1,22 +1,3 @@
-/*
-we are given a sack in which we have to fit items to get maximum value
-
-input:
-weights and their corresponding values
-
-output:
-maximum value that can fit into sack without exceeding weight limit
-
-testcase:
-w: 3 8 2 4 1
-v: 5 2 2 3 3
-max allowed weight: 7
-
-ans => 10 (3,2,1 weights)
-*/
-
-// first lets try the basic recursion one:
-
 #include<bits/stdc++.h>
 using namespace std;
 

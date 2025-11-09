@@ -8,23 +8,8 @@ int fibonacci(int n){
     return fibonacci(n-1) + fibonacci(n-2);
 }
 
-/*
-target -> 3
-                            f(5)[3]
-            f(4)[2]                        f(3)[1]
-    f(3)[1]           f(2)[1]       f(2)[1]         f(1)[0]
-    
-
-    
-    
-    
-*/
-
-
-
 
 int main(){
-    // we have to print fibonacci series until numbers are less than 100
     int a = 0;
     int b = 1;
     vector<int>series = {0,1};

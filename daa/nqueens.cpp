@@ -3,8 +3,6 @@ using namespace std;
 
 bool isSafe(int row, int col, vector<string>& board){
     int oldrow=row, oldcol=col;
-
-    // left
     while(col>=0){
         if(board[row][col]=='Q') return false;
         col--;
@@ -12,17 +10,13 @@ bool isSafe(int row, int col, vector<string>& board){
     
     row=oldrow;
     col=oldcol;
-
-    //up
     while(row>=0){
         if(board[row][col]=='Q') return false;
         row--;
     }
-
     row=oldrow;
     col=oldcol;
 
-    //left upper diagonal
     while(row>=0 && col>=0){
         if(board[row][col]=='Q') return false;
         row--;
@@ -31,8 +25,6 @@ bool isSafe(int row, int col, vector<string>& board){
 
     row=oldrow;
     col=oldcol;
-
-    //left lower diagonal
     while(row<board.size() && col>=0){
         if(board[row][col]=='Q') return false;
         row++;
